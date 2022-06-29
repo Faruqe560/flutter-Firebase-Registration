@@ -1,4 +1,5 @@
 import 'package:blog_app/components/round_button.dart';
+import 'package:blog_app/screens/login_screen.dart';
 import 'package:blog_app/screens/signin_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +30,10 @@ class _OptionScreenState extends State<OptionScreen> {
                 ),
                 RoundButton(
                   title: "Login",
-                  onPress: () {},
+                  onPress: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginScreen()));
+                  },
                   color: Colors.deepOrange,
                 ),
                 SizedBox(
